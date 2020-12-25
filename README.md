@@ -32,7 +32,7 @@ ghost install local # Running on Dev
 
 ## Overview
 
-![ghost.png](https://github.com/robincher/docker-compose-ghost-quickstart/blob/master/assets/ghost-compose-context.png)
+![ghost.png](./assets/ghost-compose-context.png)
 
 ## Operating ENV
 - **Operating System** Redhat Enterprise Linux 5.7 
@@ -100,10 +100,11 @@ The ./ghost/content directory (on docker host machine) gets mounted inside your 
 - HTTP/2 Enabled for Nginx Reverse Proxy
 
 ## License 
-[MIT LICENSE ](https://github.com/robincher/docker-compose-ghost-quickstart/blob/master/LICENSE)
+[MIT LICENSE ](./LICENSE)
 
 ## References
 + [Docker Compose for Ghost by John Washam](https://github.com/jwasham/docker-ghost-template)
 + [Ghost @ Dockerhub](https://hub.docker.com/_/ghost/)
 + [Installing Ghost locally for Dev](https://docs.ghost.org/docs/install-local)
++ [Modify by t106362512](https://github.com/t106362512/docker-compose-ghost-quickstart)
 
