@@ -20,7 +20,7 @@ services:
     container_name: ghost
     hostname: ghost
     volumes:
-      - $PWD/ghost/volumes/config.production.json:/var/lib/ghost/config.production.json:z #overwrite default settings 
+      - $PWD/ghost/config.production.json:/var/lib/ghost/config.production.json:z #overwrite default settings 
       - ./ghost/content:/var/lib/ghost/content:z
     expose:
     - "3306"
