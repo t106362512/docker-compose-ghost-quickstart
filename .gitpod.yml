@@ -19,6 +19,7 @@ tasks:
       echo export GHOST_URL=`echo ${GITPOD_WORKSPACE_URL} | sed 's/https:\/\//http:\/\/2368-/g'` >> ${HOME}/.bashrc
       clear >$(tty)
   - command: |
+      source ${HOME}/.bashrc
       echo "================================================================================"
       echo "= Hi All, You can use command \"docker-compose up -d\" to to start the service. ="
       echo "= THE GHOST_URL=${GHOST_URL}, HAVE BEEN SET IN ENVIRONMENT VARIABLE ="
