@@ -15,7 +15,10 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: echo 'init script' # runs during prebuild
-    command: sudo docker-up
+    command: |
+      sudo docker-up &
+      echo "Hi All, You can use command \"docker-compose up -d\" to to start the service."
+
 
 # List the vscode extension.
 vscode:
