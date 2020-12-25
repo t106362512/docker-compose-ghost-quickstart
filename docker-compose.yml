@@ -38,7 +38,7 @@ services:
       - database__connection__user=ghostusr
       - database__connection__password=ghostpasswd
       - database__connection__database=ghostdata
-      - url=https://2368-dbf384e7-426d-4522-b3de-b570c92bd0c1.ws-us03.gitpod.io/
+      - url="${GHOST_URL}"
     restart: always
     ports: 
       - '2368:2368'
