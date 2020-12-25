@@ -27,5 +27,4 @@ vscode:
     - zhuangtongfa.material-theme
     - esbenp.prettier-vscode
     - eamodio.gitlens
-    - raynigon.nginx-formatter
     - editorconfig.editorconfig
