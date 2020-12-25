@@ -40,8 +40,6 @@ services:
       - database__connection__database=ghostdata
       - url="${GHOST_URL}"
     restart: always
-    ports: 
-      - '2368:2368'
     networks:
       - front_end
       - back_end
