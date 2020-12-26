@@ -1,7 +1,7 @@
 {
   "oneDarkPro.vivid": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Solarized Dark",
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "git.autofetch": true
 }
