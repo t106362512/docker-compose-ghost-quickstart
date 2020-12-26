@@ -15,6 +15,7 @@ tasks:
   - init: echo 'init script' # runs during prebuild
     command: |
       sudo docker-up &
+      cp .vscode/settings.json ${HOME}/.gitpod-code/Machine/settings.json
       sudo scripts/self-signed-certificate.sh
       echo export GHOST_URL=`echo ${GITPOD_WORKSPACE_URL} | sed 's/https:\/\//http:\/\/8080-/g'` >> ${HOME}/.bashrc
       clear >$(tty)
