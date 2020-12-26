@@ -20,16 +20,19 @@ ghost install local # Running on Dev
 
 
 ## Table of Contents
-- [System Overview](#overview)
-- [Opearting Env](#opearting-env)
-- [Technolgoy Stack](#technology-stack)
-- [Preparation](#technology-stack)
-- [How to use it](#how-to-use-it)
-- [Database Backup](#how-to-back-up-your-database)
-- [Install Customised Theme](#install-theme)
-- [Security and Networking](#security-and-networking)
-- [License](#license)
-- [References](#references)
+- [Docker Compose Quickstart for Ghost Blogging Platform](#docker-compose-quickstart-for-ghost-blogging-platform)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Operating ENV](#operating-env)
+  - [Technology Stack](#technology-stack)
+  - [WORKSHOP - 使用 docker 和 docker-compose 在 Gitpod 起一套服務.](#workshop---使用-docker-和-docker-compose-在-gitpod-起一套服務)
+  - [Preparation](#preparation)
+  - [How to Use It](#how-to-use-it)
+  - [How to back up your database](#how-to-back-up-your-database)
+  - [Install Theme](#install-theme)
+  - [Security and Networking](#security-and-networking)
+  - [License](#license)
+  - [References](#references)
 
 ## Overview
 
@@ -51,6 +54,12 @@ ghost install local # Running on Dev
     - using UTFMB4 encoding (MySQL's UTF8 implementation was limited. UTFMB4 includes Emoji)
 - PHP
     - Adminer software version 4.7.8.
+
+## WORKSHOP - 使用 docker 和 docker-compose 在 Gitpod 起一套服務.
+1. 註冊一個 [GitHub](https://github.com/) 帳號, 註冊教學 [連結](https://progressbar.tw/posts/3).
+2. 使用剛才註冊的 GitHub 帳號登入 [Gitpod](https://gitpod.io/) 後,在點擊 [Settings](https://gitpod.io/settings/) 並點選 `Enable Feature Preview`.
+3. 在本專案網址 `https://github.com/t106362512/docker-compose-ghost-quickstart` 前加上 `https://gitpod.io/#`, 或是直接點此圖片 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--code-violet?logo=gitpod)](https://gitpod.io/#https://github.com/t106362512/docker-compose-ghost-quickstart) 以進入到線上 workspace.
+4. 於 `TERMINAL` 中打入 ``` GHOST_URL=`echo ${GITPOD_WORKSPACE_URL} | sed 's/https:\/\//http:\/\/8080-/g'` docker-compose up -d ``` , 即可啟動服務.
 
 ## Preparation
 - A server sitting somewhere, like Amazon EC2 , Google Compute Cloud or a virutal machine connected to your own network

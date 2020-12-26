@@ -37,3 +37,5 @@ vscode:
     - esbenp.prettier-vscode
     - eamodio.gitlens
     - editorconfig.editorconfig
+theming:
+  - editor-theme: 
