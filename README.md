@@ -1,7 +1,8 @@
 # Docker Compose Quickstart for Ghost Blogging Platform
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--code-violet?logo=gitpod)](https://gitpod.io/#https://github.com/t106362512/docker-compose-ghost-quickstart)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/robincher/docker-compose-ghost-quickstart/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Quick start docker compose that include Ghost blog, Nginx proxy with TLS/SSL and MySQL database. The intention is to get a general feel of depolying Ghost in production mode, where each component (Web , App & DB) are deployed seperately. This supports scaling and isolate failure (if any).
 
@@ -35,19 +36,21 @@ ghost install local # Running on Dev
 ![ghost.png](./assets/ghost-compose-context.png)
 
 ## Operating ENV
-- **Operating System** Redhat Enterprise Linux 5.7 
+- **Operating System** Ubuntu 20.04.1 LTS (Focal Fossa)
 
-- **docker** version 1.12.2
+- **docker** version 19.03.13
 
-- **docker-compose** version 1.9.0
+- **docker-compose** version 1.25.0
 
 ## Technology Stack
 - Node.js
-    - Ghost blog software version 1.x
+    - Ghost blog software version 3.1
 - NGINX
     - proxying port 80 calls to the Node web server on port 2368
 - MySQL database
     - using UTFMB4 encoding (MySQL's UTF8 implementation was limited. UTFMB4 includes Emoji)
+- PHP
+    - Adminer software version 4.7.8.
 
 ## Preparation
 - A server sitting somewhere, like Amazon EC2 , Google Compute Cloud or a virutal machine connected to your own network
@@ -65,8 +68,8 @@ ghost install local # Running on Dev
 5. Run docke-compose within your Linux environment 
     0. ```docker-compose build```
     0. ```docker-compose up -d```  (you can remove the -d if you want to see logs, then Ctrl+C to stop all containers)
-6. Go to https://YOUR_DOMAIN/admin to set up your blog.
-7. Once you've made your admin account using that wizard, go back to: https://YOUR_DOMAIN/admin
+6. Go to https://YOUR_DOMAIN/ghost to set up your blog.
+7. Once you've made your admin account using that wizard, go back to: https://YOUR_DOMAIN/ghost
 8. Log in and enjoy.
 9. Stopping and remove all containers : ```docker-compose down --remove-orphans``` 
 
