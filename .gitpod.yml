@@ -26,9 +26,6 @@ tasks:
       echo "= THE GHOST_URL=${GHOST_URL}, HAVE BEEN SET IN ENVIRONMENT VARIABLE ="
       echo "================================================================================"
 
-  # - command: echo "${GITPOD_WORKSPACE_URL}, ${GITPOD_HOST}"
-
-
 # List the vscode extension.
 vscode:
   extensions:
@@ -37,5 +34,3 @@ vscode:
     - esbenp.prettier-vscode
     - eamodio.gitlens
     - editorconfig.editorconfig
-theming:
-  - editor-theme: 
